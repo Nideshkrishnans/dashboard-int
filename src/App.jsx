@@ -1,7 +1,6 @@
 import './App.css'
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Line } from 'react-chartjs-2';
 import BasicTable from './components/Table';
 import Formatting from './components/Linechart'
 
@@ -26,15 +25,15 @@ function App() {
           </div>
           <div className='border border-danger rounded text-center me-1'>
             <h3 className='text-danger'>43178</h3>
-            <p style={{fontSize:'13px'}}>generators fuel consumption in litre</p>
+            <p style={{fontSize:'13px'}}>compressors energy consumption (KWH)</p>
           </div>
           <div className='text-center border border-success rounded me-1'>
             <h3 className='text-success'>84828.6</h3>
-            <p style={{fontSize:'13px'}}>generators fuel consumption in litre</p>
+            <p style={{fontSize:'13px'}}>generator's carbon emmission (kilo gram)</p>
           </div>
           <div className='text-center border border-success rounded'>
             <h3 className='text-warning'>20289.9</h3>
-            <p style={{fontSize:'13px'}}>generators fuel consumption in litre</p>
+            <p style={{fontSize:'13px'}}>compressor's carbon emmision (kilo gram)</p>
           </div>
 
     
@@ -42,7 +41,7 @@ function App() {
 
         </div>
 
-        <div className='mt-3'>
+        <div className='mt-3 ps-3'>
           <h5>Total Energy Consumption (wh)</h5>
           <Formatting/>
           

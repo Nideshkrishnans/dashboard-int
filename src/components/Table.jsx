@@ -21,11 +21,11 @@ const rows = [
 
 export default function BasicTable() {
   return (
-    <p>
+    <div>
         <div>
             <h5>generator</h5>
             <TableContainer component={Paper}>
-              <Table sx={{ minWidth: 650 }} aria-label="simple table">
+              <Table sx={{ minWidth: 550 }} aria-label="simple table">
                 <TableHead>
                   <TableRow>
                     <TableCell>Asset name</TableCell>
@@ -54,7 +54,7 @@ export default function BasicTable() {
         <div className='mt-3'>
         <h5>compressor</h5> 
         <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <Table sx={{ minWidth: 550 }} aria-label="simple table">
             <TableHead>
               <TableRow>
                 <TableCell>Asset name</TableCell>
@@ -80,6 +80,6 @@ export default function BasicTable() {
           </Table>
         </TableContainer>
     </div>
-    </p>
+    </div>
   );
 }
